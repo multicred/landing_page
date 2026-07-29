@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #f2f2f2;
+}
+
+.landing {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* mantém a proporção de "cartão de celular" em telas grandes */
+  margin: 0 auto;
+  line-height: 0; /* remove espaço fantasma abaixo da imagem */
+}
+
+.landing__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Áreas clicáveis invisíveis, posicionadas em % sobre a imagem
+   (funcionam em qualquer tamanho de tela pois a imagem é sempre
+   redimensionada mantendo a proporção original). */
+.hotspot {
+  position: absolute;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Botão "SIMULE AGORA" (topo direito) */
+.hotspot--simule {
+  top: 6.5%;
+  left: 55%;
+  width: 37%;
+  height: 4.7%;
+}
+
+/* Botão "FALE CONOSCO" / WhatsApp (parte inferior) */
+.hotspot--whatsapp {
+  top: 84.1%;
+  left: 37%;
+  width: 63%;
+  height: 8.3%;
+}
+
+/* Opcional: descomente para visualizar as áreas clicáveis durante testes
+.hotspot {
+  outline: 2px dashed red;
+}
+*/
