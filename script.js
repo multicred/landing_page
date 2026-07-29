@@ -3,7 +3,7 @@
 // ============================================
 
 // Número de WhatsApp da MultiCred (com DDI 55 + DDD + número, só números).
-const WHATSAPP_NUMERO = "5587999999999";
+const WHATSAPP_NUMERO = "5587988477096";
 
 // Mensagens iniciais que já vêm preenchidas ao abrir o WhatsApp,
 // uma para cada botão (para diferenciar de onde o cliente veio).
@@ -16,7 +16,7 @@ const WHATSAPP_MENSAGEM_FALE_CONOSCO = "Olá! Vim pela página da MultiCred e qu
 
 function abrirWhatsapp(mensagem) {
   const mensagemCodificada = encodeURIComponent(mensagem);
-  const linkWhatsapp = `https://wa.me/${WHATSAPP_NUMERO}?text=${mensagemCodificada}`;
+  const linkWhatsapp = `https://wa.me/${5587988477096}?text=${mensagemCodificada}`;
   window.open(linkWhatsapp, "_blank", "noopener");
 }
 
